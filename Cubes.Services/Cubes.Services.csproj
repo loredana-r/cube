@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Cubes.Public\Cubes.Public.csproj" />
+    <ProjectReference Include="..\Cubes.Utils\Cubes.Utils.csproj" />
+  </ItemGroup>
+
+</Project>

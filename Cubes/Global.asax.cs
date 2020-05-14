@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Autofac;
+using Cubes.App_Start;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -14,6 +16,7 @@ namespace Cubes
 		protected void Application_Start()
 		{
 			AreaRegistration.RegisterAllAreas();
+			AutofacWebapiConfig.Initialize(GlobalConfiguration.Configuration);
 			GlobalConfiguration.Configure(WebApiConfig.Register);
 			FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
 			RouteConfig.RegisterRoutes(RouteTable.Routes);
